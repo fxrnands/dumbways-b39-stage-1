@@ -1,59 +1,115 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Welcome to my Personal Web</title>
-    <link rel="icon" href="assets/34464790.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    
-</head>
-<body>
-    <body>
-        <nav>
-          <div class="nav-left">
-            <img src="https://dumbways.id/assets/images/brandred.png" alt="logo-DW" width="10%" />
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="myproject.html">My Project</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav-right">
-            <a href="contact.html">Contact Me</a>
-          </div>
-        </nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="assets/34464790.png" />
+  </head>
+  <body>
+    <!-- BAGIAN NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container-fluid">
+        <img class="logoDW" src="https://dumbways.id/assets/images/brandred.png" alt="logoDumbWays" />
+        <a class="navbar-brand fw-semibold" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item fw-semibold">
+              <a class="nav-link" href="project.html">Add Project</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a class="nav-link contact-me fw-semibold" href="contact.html">Contact Me</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- BAGIAN AKHIR NAVBAR -->
 
-        <div>
-          <section>
-            <div class="bagian-kiri">
-              <h1>Hello!</h1>
-              <h1>Welcome to my Personal Web</h1>
-              <p>“Seorang siswa bootcamp di PT. DumbWays Indonesia. Memiliki pengalaman dalam pengolahan konten di website dan media sosial. Dengan daya kreativitas dan keterampilan menulis yang baik, mampu menyusun artikel, iklan, poster, dan pengumuman yang menarik.”</p>
-              <div>
-                <a href="https://wa.me/081286311715" style="border: 1px solid black; border-radius: 15px; padding:7px 25px; font-family:Arial, Helvetica, sans-serif; color: whitesmoke; background-color: black; text-decoration: none; margin-right: 20px">Contact</a>
-                <a href="https://drive.google.com/file/d/1B_wKI13VJIjjPPtyAlBfYzWtZC_i_Qmr/view" style="color:rgb(10, 10, 10); display: inline; text-decoration: none; font-family: arial; font-weight: bold;">Download CV<img src="assets/download.png" alt="download" style="width: 20px; margin-left: 10px; margin-right: 10px"></a>
-                <div class="logo-sosmed">
-                  <a class="social-media-icon" href="https://www.facebook.com/m.fernanda.737"><span class="fab fa-facebook"></span></a>
-                  <a class="social-media-icon" href="https://twitter.com/fxrnands/"><span class="fab fa-twitter"></span></a>
-                  <a class="social-media-icon" href="https://www.instagram.com/fxrnxnds/"><span class="fab fa-instagram"></span></a>
-                  <a class="social-media-icon" href="https://www.linkedin.com/in/fxrnands/"><span class="fab fa-linkedin"></span></a>
-                </div>
-              </div>
-            </div>
-            <div class="bagian-kanan">
-              <div class="card">
-                <img src="assets/foto-pribadi.jpg" alt="foto orang" style="width: 80%; border: 1px solid whitesmoke; border-radius: 5px;" />
-                <h1 style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">M. Fernanda Kholil Jibron</h1>
-                <h3 style="font-family: arial;">Fullstack Developer</h3>
-              </div>
-            </div>
-          </section>
+    <!-- BAGIAN UPPER BODY -->
+    <section class="upper-body">
+      <div class="card-home">
+        <div class="self-description">
+          <h2 class="card-title">Hello !</h2>
+          <h3 class="card-subtitle mb-2 text-muted">Welcome to my Personal Web</h3>
+          <p class="card-text">
+            Junior Programmer dengan 3+ bulan pengalaman menggunakan JavaScript untuk mengembangkan, menguji dan mengamati aplikasi / web software perusahaan. Telah mendesain dan mengembangkan lebih dari 10 aplikasi e-Commerce. Sedang
+            mencari perusahaan yang bergerak di bidang e-Commerce untuk mengembangkan aplikasi dan software bisnis.
+          </p>
+          <div class="contact-download-button">
+            <a href="https://wa.me/081286311715" class="personal-contact">Personal Contact</a>
+            <a href="assets/CV JIBRON.pdf" class="download-button">Download CV<i class="fa-solid fa-download"></i></a>
+          </div>
+          <div class="social-media-logo">
+            <a class="social-media-icon" href="https://www.facebook.com/m.fernanda.737" target="_blank"><span class="fab fa-facebook"></span></a>
+            <a class="social-media-icon" href="https://twitter.com/fxrnands/" target="_blank"><span class="fab fa-twitter"></span></a>
+            <a class="social-media-icon" href="https://www.instagram.com/fxrnxnds/" target="_blank"><span class="fab fa-instagram"></span></a>
+            <a class="social-media-icon" href="https://www.linkedin.com/in/fxrnands/" target="_blank"><span class="fab fa-linkedin"></span></a>
+            <a class="social-media-icon" href="https://github.com/fxrnands" target="_blank"><span class="fab fa-github"></span></a>
           </div>
         </div>
-</body>
+        <div class="card self-photo">
+          <img src="assets/self-photo.jpg" class="card-img-top" alt="self-photo" />
+          <div class="card-body">
+            <h4 class="my-name">M. FERNANDA KHOLIL JIBRON</h4>
+            <p class="card-text-name">JUNIOR FULLSTACK DEVELOPER</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BAGIAN AKHIR UPPER BODY -->
+
+    <!-- BAGIAN MY PROJECT -->
+    <h1 class="head-project">MY PROJECT</h1>
+    <section class="my-project">
+      <div class="card-project-list">
+        <div class="card" style="width: 18rem">
+          <img src="assets/Capture.PNG" class="card-img-top" alt="web-portofolio" />
+          <div class="card-body">
+            <a class="judul-project" href="https://batch-39-day-6.vercel.app/" target="_blank"> Web Portofolio Pribadi </a>
+            <div class="creating-duration">Durasi : 2 day</div>
+            <p style="margin-top: 20px">Membuat Web Portofolio Pribadi menggunakan HTML, CSS, dan Bootstrap 5. Dilengkapi dengan Form Contact dan Form Add Project agar website menjadi lebih dinamis.</p>
+          </div>
+          <div class="logo-blog">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="assets/blogpost.PNG" class="card-img-top" alt="dumbWaysBootcamp" style="height: 150px" />
+          <div class="card-body">
+            <a class="judul-project" href="https://batch-39-day-4-dan-5.vercel.app/myproject.html" target="_blank"> Form Submission </a>
+            <div class="creating-duration">Durasi : 1 day</div>
+            <p style="margin-top: 20px">Membuat Form Blog Post agar langsung submit project pada website. Dilengkapi dengan count post blog time. Menggunakan bahasa pemrograman JavaScript.</p>
+          </div>
+          <div class="logo-blog">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="assets/materiku.PNG" class="card-img-top" alt="dumbWaysBootcamp" />
+          <div class="card-body">
+            <a class="judul-project" href="https://website-sederhana-materiku.vercel.app/" target="_blank"> Website e-Learning </a>
+            <div class="creating-duration">Durasi : 1 day</div>
+            <p class="card-text" style="font-size: 15px">Membuat website e-Learning tentang Microsoft Office dengan judul "Materiku".</p>
+          </div>
+          <div class="logo-blog">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
