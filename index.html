@@ -1,42 +1,43 @@
-<html lang="en">
-  <head>
-    <title>Homepage</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
- 
-    </style>
-  </head>
+<html>
+  <title>Selamat Datang</title>
+  <link rel="stylesheet" href="style.css" />
   <body>
-    <nav>
-      <div class="nav-left">
-        <img src="https://dumbways.id/assets/images/brandred.png" alt="logo-DW" width="10%" />
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <a href="Contact Me">Contact Me</a>
-      </div>
-    </nav>
+    <h1>GET IN TOUCH</h1>
 
-    <div class="container">
-      <section>
-        <div class="section-left">
-          <div class="card">
-            <img src="https://i.pinimg.com/736x/32/38/6c/32386c72c7f2a8b5c1a10fc51c149cb1--science-ideas-quizes.jpg" alt="foto orang" width="100%"/>
-            <h1>Rhoma Irama</h1>
-            <h3>Fullstack Developer</h3>
-          </div>
-        <div class="section-right">
-          <h2>hello world</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis ex eveniet nostrum aspernatur corporis provident nam incidunt in tenetur.</p>
-        </div>
-      </section>
-    </div>
+    <form action="">
+      <div class="name">
+        <label for="input-name">Name</label>
+        <input id="input-name" type="input-name" />
+      </div>
+
+      <div>
+        <label for="input-email">Email</label>
+        <input id="input-email" type="input-email" />
+      </div>
+
+      <div>
+        <label for="input-number">Phone Number</label>
+        <input id="input-number" type="input-number" />
+      </div>
+
+      <div>
+        <label for="input-subject">Subject</label>
+        <select id="input-subject">
+          <option value="">Select</option>
+          <option value="Fullstack">Fullstack</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="input-message">Message</label>
+        <textarea name="" id="input-message" cols="30" rows="10" style="resize: none"></textarea>
+      </div>
+      <div class="button">
+        <button type="button" onclick="submitData ()">Submit</button>
+      </div>
+    </form>
   </body>
+  <script src="data.js"></script>
 </html>
