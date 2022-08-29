@@ -1,0 +1,46 @@
+/* STYLING ADD PROJECT */
+
+.isi-form {
+  margin: 50px auto;
+  width: 550px;
+  padding: 10px;
+}
+
+.date {
+  display: flex;
+}
+
+.mb-3 {
+  flex: 50%;
+}
+
+.checkbox-technologies {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.fontTech {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkbox-kiri {
+  margin-top: 10px;
+  flex: 50%;
+}
+
+.checkbox-kanan {
+  margin-top: 10px;
+  flex: 50%;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  box-shadow: 0px 1px 9px grey;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+
+

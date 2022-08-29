@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my Personal Web</title>
+    <link rel="icon" href="assets/images/34464790.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+  </head>
+
+  <body>
+    {{! NAVBAR }}
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" style="height: 60px;">
+      <div class="container-fluid">
+        <img src="assets/images/logo.png" alt="logo-dumbways" class="ms-4 me-4" />
+        <a class="navbar-brand" href="/">Personal Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            {{#if this.isLogin}}
+              <li class="nav-item">
+                <a class="nav-link" href="/myproject">Add Project</a>
+              </li>
+            {{/if}}
+          </ul>
+          <form class="d-flex mt-3">
+            {{#if this.isLogin}}
+              <a href="#" class="btn text-dark fw-bold">Hallo, {{user.name}}</a>
+              <a href="/logout" class="btn text-grey" style="margin-right: 20px;">Logout</a>
+            {{else}}
+              <a href="/register" class="btn text-dark fw-bold">Register</a>
+              <a href="/login" class="btn text-grey" style="margin-right: 20px;">Login</a>
+            {{/if}}
+            <a href="/contact" class="btn btn-outline-success bg-dark text-white" style="margin-right: 20px;">Contact</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    {{! AKHIR NAVBAR }}
+
+    {{! ISI CARD }}
+    <section class="container">
+      <div class="self-card card mb-3" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body left-side">
+              <h3 class="card-title">Hello!</h3>
+              <h5 class="card-title">Welcome to my Personal Web</h5>
+              <p class="self-description card-text">Hello, I am a Junior Fullstack Developer from PT. Indonesian Dumbways. I graduated from SMAN 59 Jakarta in 2017 and have been interested in programming since 3 years ago. I like web design
+                using CSS and other frameworks. My favorite programming language is JavaScript.</p>
+            </div>
+            <div style="margin-top: 20px;">
+              <a
+                href="https://wa.me/081286311715"
+                style="border: 1px solid black; border-radius: 15px; padding:7px 25px; font-family:Arial, Helvetica, sans-serif; color: whitesmoke; background-color: black; text-decoration: none; margin-right: 30px; margin-left: 50px "
+              >Contact</a>
+              <a href="assets/images/CV JIBRON.pdf" style="color:rgb(10, 10, 10); display: inline; text-decoration: none; font-family: arial; font-weight: bold;">Download CV<img
+                  src="assets/images/download.png"
+                  alt="download"
+                  style="width: 20px; margin-left: 10px; margin-right: 10px"
+                /></a>
+            </div>
+            <div class="social-media">
+              <a class="social-media-icon" href="https://www.facebook.com/m.fernanda.737"><span class="fab fa-facebook"></span></a>
+              <a class="social-media-icon" href="https://twitter.com/fxrnands/"><span class="fab fa-twitter"></span></a>
+              <a class="social-media-icon" href="https://www.instagram.com/fxrnxnds/"><span class="fab fa-instagram"></span></a>
+              <a class="social-media-icon" href="https://www.linkedin.com/in/fxrnands/"><span class="fab fa-linkedin"></span></a>
+              <a class="social-media-icon" href="https://github.com/fxrnands"><span class="fab fa-github"></span></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; margin-right:20px;">
+              <img src="assets/images/self-photo.jpg" class="card-img-top" alt="self-photo" />
+              <div class="card-body">
+                <p class="card-text card-name">Fernands</p>
+                <h5 style="text-align: center;">Fullstack Developer</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{! AKHIR ISI CARD }}
+
+    {{! MY PROJECT }}
+    <section class="isi-konten" style="text-align: center;">
+      <hr class="line" />
+      <h1 class="judul-my-project" style="margin-top: 70px;">MY PROJECT</h1>
+      {{#each dataProject}}
+        <div class="list-project" style="display: inline-flex; padding: 30px; text-align: center; margin-top: 50px;">
+          <div class="card" style="width: 18rem; justify-content: center;">
+            <img src="img-upload/{{this.images}}" class="card-img-top" alt="upload-photo" />
+            <div class="judul-project">
+              <a class="judul-project-utama" href="/detail-project/{{this.id}}" target="_blank">{{this.name}}</a>
+            </div>
+            <div class="project-duration">
+              Durasi :
+              {{this.duration}} | {{this.user}}
+            </div>
+            <p class="card-text" style="margin-top: 15px; margin-bottom: 10px; text-align: left; padding: 10px; font-size: 14px">
+              {{this.description}}
+            </p>
+            <div class="checkbox-technologies">
+              {{#each technologies}}
+                <i class="fa-brands fa-{{this}}"></i>
+              {{/each}}
+            </div>
+            {{#if this.isLogin}}
+              <div class="btn-group">
+                <a href="/edit-project/{{this.id}}" class="btn-post">Edit Post</a>
+                <a href="/delete-project/{{this.id}}" class="btn-post" type="button">
+                  Delete Blog
+                </a>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      {{/each}}
+    </section>
+    {{! AKHIR MY PROJECT }}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
