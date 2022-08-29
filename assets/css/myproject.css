@@ -1,0 +1,166 @@
+nav {
+  background-color: rgb(241, 238, 238);
+  display: flex;
+  height: 10vh;
+}
+
+.nav-left {
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-left li {
+  display: inline;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left ul li a {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  padding: 15px   ;
+}
+
+.nav-right {
+  font-family: arial;
+  display: flex;
+  flex: 50%;
+  justify-content: end;
+  align-items: center;
+  padding: 30px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 5px;
+  background-color: orangered;
+}
+
+body {
+  margin: 0px;
+}
+
+.input-blog-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 530px;
+  background-color: aliceblue;
+}
+
+.add-my-project {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+body {
+  background-color: rgb(212, 212, 212);
+}
+
+form {
+  margin: 50px auto;
+  width: 550px;
+  padding: 10px;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  font-family: monospace;
+}
+
+.nama {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.tanggal {
+  width: 110%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.pesan {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+form button {
+  background-color: black;
+  color: white;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+}
+
+.date {
+  display: flex;
+}
+
+.checkbox-technologies {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.checkbox-kiri {
+  flex: 50%;
+}
+
+.checkbox-kanan {
+  flex: 50%;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  box-shadow: 0px 1px 9px grey;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
