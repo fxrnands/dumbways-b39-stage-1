@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my Personal Web</title>
+    <link rel="icon" href="assets/images/34464790.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+  </head>
+  <body>
+    {{! NAVBAR }}
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" style="height: 60px;">
+      <div class="container-fluid">
+        <img src="assets/images/logo.png" alt="logo-dumbways" class="ms-4 me-4" />
+        <a class="navbar-brand" href="/">Personal Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/myproject">Add Project</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3">
+            <a href="/contact" class="btn btn-outline-success bg-dark text-white">Contact</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    {{! AKHIR NAVBAR }}
+
+    {{! ISI CARD }}
+    <section class="container">
+      <div class="card-description">
+        <div class="left-card">
+          <h3 class="card-title">Hello!</h3>
+          <h5 class="card-title">Welcome to my Personal Web</h5>
+          <p class="card-text">Hello, I am a Junior Fullstack Developer from PT. Indonesian Dumbways. I graduated from SMAN 59 Jakarta in 2017 and have been interested in programming since 3 years ago. I like web design using CSS and other
+            frameworks. My favorite programming language is JavaScript.</p>
+          <div class="social-media">
+            <a class="social-media-icon" href="https://www.facebook.com/m.fernanda.737"><span class="fab fa-facebook"></span></a>
+            <a class="social-media-icon" href="https://twitter.com/fxrnands/"><span class="fab fa-twitter"></span></a>
+            <a class="social-media-icon" href="https://www.instagram.com/fxrnxnds/"><span class="fab fa-instagram"></span></a>
+            <a class="social-media-icon" href="https://www.linkedin.com/in/fxrnands/"><span class="fab fa-linkedin"></span></a>
+            <a class="social-media-icon" href="https://github.com/fxrnands"><span class="fab fa-github"></span></a>
+          </div>
+        </div>
+        <div class="card right-card">
+          <img src="assets/images/self-photo.jpg" class="card-img-top" alt="self-photo" />
+          <div class="card-body">
+            <p class="card-text card-name">M Fernanda Kholil Jibron</p>
+            <h5>Fullstack Developer</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{! AKHIR ISI CARD }}
+
+    {{! MY PROJECT }}
+    <div class="isi-konten">
+      <hr class="line" />
+      <h1 class="judul-my-project">MY PROJECT</h1>
+      {{#each dataProject}}
+        <div class="row">
+          <div class="col-sm-3">
+            <div>
+              <img class="blog-image" src="assets/images/programmer.jpg" alt="programmer-photo" />
+            </div>
+            <div class="blog-content">
+              <div class="judul-blog">
+                <a class="judul-pasar-coding" href="/detailblog/{{@index}}" target="_blank">{{this.name}}</a>
+              </div>
+              <div class="detail-blog-content">
+                Durasi :
+                {{this.duration}}
+              </div>
+              <p class="card-text" style="margin-top: 15px; margin-bottom: 10px;">
+                {{this.description}}
+              </p>
+            </div>
+            {{#each technologies}}
+              <i class="fa-brands fa-{{this}}"></i>
+            {{/each}}
+            <div class="btn-group">
+              <a href="/edit-blog/{{@index}}" class="btn-post">Edit Post</a>
+              <button type="button" class="btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Delete Blog
+              </button>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete this post ?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-post" data-bs-dismiss="modal">Close</button>
+                    <a href="/delete-blog/{{@index}}" class="btn-post">Delete Blog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    {{! AKHIR MY PROJECT }}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
