@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(226, 226, 226);
+}
+.card-description {
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(7, 6, 6, 0.2);
+  padding: 50px;
+}
+
+.left-card {
+  justify-content: end;
+  flex: 30%;
+  margin-right: 60px;
+}
+
+.left-card p {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.right-card {
+  flex: 10%;
+  width: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.social-media {
+  margin-top: 40px;
+}
+
+.social-media-icon {
+  margin-right: 30px;
+  font-size: 40px;
+  color: black;
+}
+
+
+.row {
+  justify-content: center;
+}
+
+.col-sm-3 {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.blog-image {
+  width: 100%;
+  border: 1px whitesmoke;
+  border-radius: 5px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.judul-blog {
+  margin-top: 10px;
+}
+
+.detail-blog-content {
+  color: grey;
+}
+
+.logo-blog {
+  display: flex;
+}
+
+.logo-kecil {
+  width: 25px;
+  margin: 5px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-edit {
+  color: white;
+  background-color: rgb(39, 39, 77);
+  padding: 5px;
+  margin-right: 5px;
+  border: black;
+  border-radius: 5px;
+  width: 165px;
+  font-family: sans-serif;
+}
+
+.btn-post {
+  color: white;
+  background-color: rgb(39, 39, 77);
+  padding: 5px;
+  margin-right: 5px;
+  border: black;
+  border-radius: 5px;
+  width: 165px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.judul-my-project {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.isi-konten {
+  background-color: whitesmoke;
+}
+
+.judul-pasar-coding {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fa-brands {
+  padding: 7px;
+  font-size: 25px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
