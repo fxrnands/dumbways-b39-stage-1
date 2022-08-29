@@ -1,0 +1,217 @@
+nav {
+    background-color: rgb(241, 238, 238);
+    display: flex;
+    height: 10vh;
+}
+
+
+
+body {
+    margin: 0px;
+}
+
+.nav-left {
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+    margin-top: 6px;
+    width: 50%;
+}
+
+.nav-left li {
+    display: inline;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li a {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    padding: 15px   ;
+}
+
+.nav-right {
+    font-family: arial;
+    display: flex;
+    flex: 50%;
+    justify-content: end; 
+    align-items: center; 
+    padding: 30px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+
+section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 120px;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.logo-sosmed {
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.social-media-icon {
+    padding: 15px;
+    color: black;
+    font-size: 30px;
+}
+
+.card-nama {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+.bagian-kiri {
+    flex: 50%;
+  }
+
+.bagian-kanan {
+    flex: 50%;
+  }
+
+.bagian-kiri p {
+    margin-bottom: 90px;
+  }
+
+h1 {
+    font-family: verdana;
+  }
+
+p {
+    font-family: sans-serif;
+  }
+
+body {
+    background-color: rgb(203, 212, 203);
+  }
+
+
+.blog-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-evenly;
+  }
+  
+  .blog-list-item {
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 10px;
+    width: 800px;
+    height: 30%;
+    background-color: whitesmoke;
+    box-shadow: 0px 9px 20px grey;
+    margin: 25px;
+    padding: 20px;
+  }
+  
+  .blog-image {
+    width: 100%;
+    border: 1px whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  .judul-blog {
+    margin-top: 10px;
+  }
+  
+  .detail-blog-content {
+    color: grey;
+  }
+  
+  .logo-blog {
+    display: flex;
+  }
+  
+  .logo-kecil {
+    width: 25px;
+    margin: 5px;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .btn-edit {
+    color: white;
+    background-color: rgb(39, 39, 77);
+    padding: 5px;
+    margin-right: 5px;
+    border: black;
+    border-radius: 5px;
+    width: 165px;
+    font-family: sans-serif;
+  }
+  
+  .btn-post {
+    color: white;
+    background-color: rgb(39, 39, 77);
+    padding: 5px;
+    margin-right: 5px;
+    border: black;
+    border-radius: 5px;
+    width: 165px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .judul-my-project {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .isi-konten {
+    background-color: whitesmoke;
+  }
+  
+  .judul-pasar-coding {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .fa-brands {
+    padding: 7px;
+    font-size: 25px;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+  }

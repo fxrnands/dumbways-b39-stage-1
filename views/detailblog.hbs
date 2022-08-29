@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasar Coding di Indonesia</title>
+    <link rel="icon" href="/assets/images/34464790.png">
+    <link rel="stylesheet" href="../assets/css/detailblog.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="https://dumbways.id/assets/images/brandred.png" alt="logo-DW" width="10%" />
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/myproject">Add Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="/contact">Contact Me</a>
+      </div>
+    </nav>
+    <div class="card-thread">
+      <h1 class="judul-thread">
+        {{data.title}}
+      </h1>
+
+      <div class="head-thread">
+        <img class="foto-programmer" src="/assets/images/programmer.jpg" alt="foto-programmer" />
+        <div class="durasi-dan-tanggal">
+          <div>
+            <h2>Duration</h2>
+            <h3 class="durasi"> <img class="foto-durasi" src="/assets/images/calendar.png" alt="calendar" style="width: 20px;" /> {{data.startDate}} - {{data.endDate}} </h3>
+            <h3 class="durasi"> <img class="foto-durasi" src="/assets/images/clock.png" alt="clock" style="width: 20px;" /> {{data.duration}} </h3>
+          </div>
+          <div>
+            <h2>Technologies</h2>
+            <div class="blog-technologies">
+              <div class="logo-kiri">
+                <h3 class="logo-js"> <img class="foto-js" src="/assets/images/reactjs-logo.png" alt="reactjs-logo" style="width: 20px;" /> React JS </h3>
+                <h3 class="logo-js"> <img class="foto-js" src="/assets/images/nodejs-logo.png" alt="nodejs-logo" style="width: 20px;" /> Node JS </h3>
+              </div>
+              <div class="logo-kanan">
+                <h3 class="logo-js"> <img class="foto-js" src="/assets/images/javascript-logo.png" alt="js-logo" style="width: 20px;" /> JavaScript </h3>
+                <h3 class="logo-js"> <img class="foto-js" src="/assets/images/socket-io.png" alt="secoketio-logo" style="width: 20px;" /> Socket IO </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="isi-thread">
+        <p>
+          {{data.description}}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
