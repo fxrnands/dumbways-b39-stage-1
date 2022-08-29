@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project Page</title>
+    <link rel="icon" href="assets/34464790.png">
+    <link rel="stylesheet" href="myproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="https://dumbways.id/assets/images/brandred.png" alt="logo-DW" width="10%" />
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="myproject.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <div class="isi-form">
+    <h1 class="add-my-project" >ADD MY PROJECT</h1>
+    <form onsubmit="submitProject(event)">
+      <div class="name">
+        <label for="input-name">Project Name</label>
+        <input class="nama" id="input-name" type="input-name" />
+      </div>
+      <div class="Date">
+        <div class="start-date" style="margin-right: 55px;" >
+          <label for="input-date" >Start Date</label>
+          <input class="tanggal" id="input-start-date" type="date" />
+        </div>
+
+        <div class="end-date">
+          <label for="input-date">End Date</label>
+          <input class="tanggal" id="input-end-date" type="date" />
+        </div>
+      </div>
+
+      <div>
+        <label for="input-message">Description</label>
+        <textarea class="pesan" name="pesan" id="input-message" cols="30" rows="10" style="resize: none"></textarea>
+      </div>
+
+      <div>
+        <label for="checkbox">Technologies</label>
+        <div class="checkbox-technologies">
+          <div class="checkbox-kiri" >
+            <div>
+              <input value="fa-node-js" type="checkbox" id="inputNode">
+              <label class="fontTech" for="inputNode"> Node JS </label>
+            </div>
+            <div>
+              <input value="fa-react" type="checkbox" id="inputReact">
+              <label class="fontTech" for="inputReact" > React JS </label>
+            </div>
+          </div>
+          <div class="checkbox-kanan">
+            <div>
+              <input value="fa-java" type="checkbox" id="inputNext">
+              <label class="fontTech" for="inputNext"> Next JS </label>
+            </div>
+            <div>
+              <input value="fa-square-js" type="checkbox" id="inputTS">
+              <label class="fontTech" for="inputTS"> TypeScript </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div>
+      <label>Upload Image</label>
+      <div class="input-blog-image-group">
+        <label for="input-blog-image">
+          <img src="assets/file.png" alt="file" />
+        </label>
+        <input type="file" id="input-blog-image" hidden />
+      </div>
+    </div>
+
+      <div class="button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+      
+      <div class="isi-konten">
+        <hr class="line" />
+      <h1 class="judul-my-project" >MY PROJECT</h1>
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div>
+            <img class="blog-image" src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=826&t=st=1660416579~exp=1660417179~hmac=4c3f426651143bef7785e324ebec6c54da921120957f34e971e7559de48dacee" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="judul-blog">
+              <a class="judul-pasar-coding" href="detailblog.html" target="_blank"
+                >Pasar Coding di Indonesia</a
+              >
+            </div>
+            <div class="detail-blog-content">
+              Durasi : 3 bulan
+            </div>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir.
+            </p>
+          </div>
+          <div class="logo-blog">
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Delete Blog</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="myproject.js" ></script>
+  </body>
+</html>
