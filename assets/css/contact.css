@@ -1,0 +1,21 @@
+/* STYLING FORM */
+
+.form {
+  margin: 50px auto;
+  width: 550px;
+  padding: 10px;
+}
+
+.form-contact {
+  padding: 20px;
+}
+
+form button {
+  background-color: orangered;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
