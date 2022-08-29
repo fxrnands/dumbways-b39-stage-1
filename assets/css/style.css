@@ -1,0 +1,171 @@
+nav {
+    background-color: rgb(241, 238, 238);
+    display: flex;
+    height: 10vh;
+}
+
+body {
+    margin: 0px;
+}
+
+.nav-left {
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+    width: 50%;
+}
+
+.nav-left li {
+    display: inline;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li a {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    padding: 15px   ;
+}
+
+.nav-right {
+    font-family: arial;
+    display: flex;
+    flex: 50%;
+    justify-content: end; 
+    align-items: center; 
+    padding: 30px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+
+section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 120px;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.logo-sosmed {
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.social-media-icon {
+    padding: 15px;
+    color: black;
+    font-size: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+.bagian-kiri {
+    flex: 50%;
+  }
+
+.bagian-kanan {
+    flex: 50%;
+  }
+
+.bagian-kiri p {
+    margin-bottom: 90px;
+  }
+
+h1 {
+    font-family: verdana;
+  }
+
+p {
+    font-family: sans-serif;
+  }
+
+body {
+    background-color: rgb(203, 212, 203);
+  }
+
+form {
+    margin: 90px auto;
+    width: 350px;
+    padding: 10px;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+form input,select,textarea {
+   width: 100%;
+   padding: 10px;
+   margin-top: 5px;
+   background-color: aliceblue;
+   border-radius: 5px;
+   border: 1px solid black;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    padding: 7px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: arial;
+}
+
+.form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 120px;
+    background-color: whitesmoke;
+}
+
+.form h1 {
+    margin-left: 420px;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
